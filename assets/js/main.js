@@ -26,7 +26,7 @@ function onPlayerReady(event) {
 var playerVolume = localStorage.getItem("volume");
 document.querySelector(".slider").value = playerVolume;
 
-var intervalID = setInterval(function () {
+var repeat50ms = setInterval(function () {
     sliderValue = document.querySelector(".slider").value;
     playerVolume = sliderValue;
     player.setVolume(playerVolume);
